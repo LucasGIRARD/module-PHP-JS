@@ -1,0 +1,65 @@
+
+body {
+    background-color: #60c1bf;
+}
+
+
+
+.mdl-tabs {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.mdl-tabs__linkContainer {
+    overflow-x: scroll;    
+}
+
+.mdl-tabs__container {
+    height: 49px;
+    overflow-y: hidden;
+}
+
+.scrollNeeded .mdl-tabs__linkContainer {
+    width: calc(100% - 2 * 48px );
+    position: relative;
+    left: 48px;
+}
+
+.mdl-tabs__tab-bar {
+    min-width: 646px;    
+}
+
+.mdl-tabs__tab {
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.mdl-tabs .scrollindicator {
+    position: absolute;
+    line-height: 48px;
+    width: 48px;
+    display: none;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+}
+
+.scrollindicator--left {
+    left: 0px;
+}
+
+.scrollindicator--right {
+    right: 0px;
+}
+
+.scrollindicator.disabled {
+    opacity: .12;
+    cursor: default;
+}
+
+.scrollNeeded .scrollindicator {
+    display: block;
+}
